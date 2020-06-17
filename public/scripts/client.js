@@ -3,7 +3,12 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+$(document).ready(() => {
+  loadTweets();
+  submitForm();
+  
 
+});
 const data = [
   {
     "user": {
@@ -38,7 +43,7 @@ const createTweetElement = function (tweetData) {
     </div>
     <div class="user-name">${tweetData.user.handle}</div>
   </header>
-  <div class="content">${tweetData.content.text}</div>
+  <div class="content">${escape(tweetData.content.text)}</div>
   <footer>${Date(tweetData.created_at)}
     <div class="footer-images"><img src="/images/flag.png">
       <img src="/images/heart.png">
@@ -50,18 +55,8 @@ const createTweetElement = function (tweetData) {
   return $tweet;
 };
 
-const renderTweets = function (tweets) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
-  for (let tweet of tweets) {
-    let $result = createTweetElement(tweet);
-    $('div.tweets-container').prepend($result);
-  }
-}
-
 const submitForm = function () {
-  $('form').submit(function (evt) {
+  $('form').on("submit", function(evt) {
     evt.preventDefault();
     console.log('tweeted!')
     let tweet = $("textarea[name='text']").val();
@@ -70,17 +65,26 @@ const submitForm = function () {
     } else if (tweet.length > 140) {
       alert("Your tweet is too long");
     } else {
-      $.ajax({
-        url: '/tweets',
+      $.ajax('/tweets',{
         method: 'POST',
-        dataType: 'JSON',
         data: $(this).serialize(),
-      }).then(function (response) {
+      }).then(() =>{
         loadTweets();
+        $("#tweet-text").val("");
         
       })
     }
   })
+}
+
+const renderTweets = function (tweets) {
+  // loops through tweets
+  // calls createTweetElement for each tweet
+  // takes return value and appends it to the tweets container
+  for (let tweet of tweets) {
+    let $result = createTweetElement(tweet);
+    $('div.tweets-container').prepend($result);
+  }
 }
 
 const loadTweets = function () {
@@ -93,9 +97,11 @@ const loadTweets = function () {
   })
 };
 
-$(document).ready(() => {
-  loadTweets();
-  submitForm();
-  
+const escape = function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
-});
+
+
