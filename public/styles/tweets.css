@@ -4,6 +4,7 @@
   justify-content: space-evenly;
 }
 article.tweet{
+  margin-bottom: 3em;
   display: flex;
   border: 0.2rem solid rgb(90, 90, 90);
   flex-direction: column;
