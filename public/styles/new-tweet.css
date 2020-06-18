@@ -37,14 +37,17 @@ output{
 }
 
 .error-msg {
-  display: flex;
+  display: none;
   margin-top: 0;
-  font-size: small;
+  font-size: medium;
   justify-self: center;
-  background-color: #c33;
-  color: #fff;
+  color: #c33;
   align-self: stretch;
+  border: 2px solid red;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+
 
 #exceed-char{
   display: flex;

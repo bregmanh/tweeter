@@ -60,12 +60,17 @@ const submitForm = function () {
     evt.preventDefault();
     let tweet = $("textarea[name='text']").val();
     $('.error-msg').empty();
+    $('.error-msg').css('display', 'none');
+
 
     if (tweet === "") {
+      $('.error-msg').css('display','flex');
       $('.error-msg').append(`<p><i class="fa fa-warning" aria-hidden="true"></i>Your tweet seems empty</p>`);
     } else if (tweet.length > 140) {
+      $('.error-msg').css('display','flex');
       $('.error-msg').append(`<p><i class="fa fa-warning" aria-hidden="true"></i>Your tweet is too long!</p>`);
     } else {
+      $('.error-msg').css('display','flex');
       $('.error-msg').empty();
       $('.error-msg').hide();
       $.ajax('/tweets', {
