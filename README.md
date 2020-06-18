@@ -10,6 +10,12 @@ It was built with HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Exp
 2. Submission: once the user submits a valid tweet, the data is then sent as an ajax request, and rendered on the screen. Last tweet to be submitted is at the top. Additional details that are rendered are: users name, their handle, tweet content and the time of post. 
 3. Additional features: responsive design, and escaping to prevent XSS.
 
+## Final Product
+
+![New Tweet - Desktop Version of Site]()
+![Empty Tweet Error and Hover over a Tweet]()
+![Long Tweet Error - Mobile Version of Site]()
+
 ## Getting Started
 
 1. Install dependencies using the `npm install` command.
