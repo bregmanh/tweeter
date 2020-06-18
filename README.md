@@ -13,7 +13,7 @@ It was built with HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Exp
 ## Final Product
 
 ![New Tweet - Desktop Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/new-tweet.png?raw=true)
-![Empty Tweet Error and Hover over a Tweet]()
+![Empty Tweet Error and Hover over a Tweet](https://github.com/bregmanh/tweeter/blob/master/docs/mobile-hover.png?raw=true)
 ![Long Tweet Error - Mobile Version of Site]()
 
 ## Getting Started
