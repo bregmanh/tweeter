@@ -77,6 +77,7 @@ const submitForm = function () {
         method: 'POST',
         data: $(this).serialize(),
       }).then(() => {
+        
         loadTweets();
         $("#tweet-text").val("");
 

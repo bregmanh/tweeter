@@ -35,10 +35,15 @@ main{
 }
 
 @media only screen and (min-width: 1024px) {
+  
   body{
     flex-direction: row;
   }
- 
+  body > nav{
+    height:120px;
+    background-color: #4056A1;
+  }
+  
  main.container{
    width: 50%;
    align-items: center;
@@ -46,9 +51,11 @@ main{
    margin-top: 120px;
    margin-left: 3em;
  }
-  header.main{
+  body > header.main{
+    margin-top: 120px;
    width: 30%; 
   }
+  
 
 }
 

@@ -11,4 +11,9 @@ $(document).ready(function () {
       return (140 - tweetLength);
     });
   });
+  //resets the character count to 140 after form submission
+  $('form').on('submit', function (event) {
+      return $('.counter').html(140); 
+    });
+  
 });
