@@ -20,7 +20,8 @@ textarea{
   display: flex;
 flex-direction: row;
 justify-content: space-between;
-padding-bottom: 2em;
+padding-bottom: 3em;
+
 }
 
 button{
@@ -34,3 +35,27 @@ output{
   font-family: 'Bungee';
   font-size: medium;
 }
+
+.error-msg {
+  display: flex;
+  margin-top: 0;
+  font-size: small;
+  justify-self: center;
+  background-color: #c33;
+  color: #fff;
+  align-self: stretch;
+}
+
+#exceed-char{
+  display: flex;
+  margin-top: 0;
+  visibility: hidden;
+  font-size: small;
+  justify-self: center;
+  background-color: #c33;
+  color: #fff;
+  align-self: center;
+}
+
+
+

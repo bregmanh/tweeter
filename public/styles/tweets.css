@@ -20,7 +20,6 @@ article.tweet > header{
 div.user{
   display: flex;
 flex-direction: row;
-
 }
 
 div.signature {
@@ -48,6 +47,15 @@ div.content{
   border-bottom: 0.2rem solid rgb(90, 90, 90);
 }
 
+article > header{
+  height: 3.5em;
+
+}
+article >header h5 {
+  margin-left: 1em;
+  align-self: center;
+}
+
 article > footer {
   display: flex;
   flex-direction: row;
@@ -60,9 +68,17 @@ article > footer {
   justify-content: space-between;
 }
 
+
 .footer-images > img {
-  width: 1.2em;
+  width: 1em;
   padding: 0.1em;
+  
+}
+
+.footer-images > img {
+  width: 1em;
+  padding: 0.1em;
+  
 }
 div.footer-images {
   display: flex;
@@ -75,5 +91,6 @@ article.tweet:hover{
  font-weight: 600;
 
 }
+
 
 

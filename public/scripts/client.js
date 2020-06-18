@@ -6,7 +6,7 @@
 $(document).ready(() => {
   loadTweets();
   submitForm();
-  
+
 
 });
 const data = [
@@ -44,7 +44,7 @@ const createTweetElement = function (tweetData) {
     <div class="user-name">${tweetData.user.handle}</div>
   </header>
   <div class="content">${escape(tweetData.content.text)}</div>
-  <footer>${Date(tweetData.created_at)}
+  <footer>${timePosted(tweetData.created_at)}
     <div class="footer-images"><img src="/images/flag.png">
       <img src="/images/heart.png">
       <img src="/images/retweet.png">
@@ -56,22 +56,25 @@ const createTweetElement = function (tweetData) {
 };
 
 const submitForm = function () {
-  $('form').on("submit", function(evt) {
+  $('form').on("submit", function (evt) {
     evt.preventDefault();
-    console.log('tweeted!')
     let tweet = $("textarea[name='text']").val();
+    $('.error-msg').empty();
+
     if (tweet === "") {
-      alert("Your tweet seems empty");
+      $('.error-msg').append(`<p><i class="fa fa-warning" aria-hidden="true"></i>Your tweet seems empty</p>`);
     } else if (tweet.length > 140) {
-      alert("Your tweet is too long");
+      $('.error-msg').append(`<p><i class="fa fa-warning" aria-hidden="true"></i>Your tweet is too long!</p>`);
     } else {
-      $.ajax('/tweets',{
+      $('.error-msg').empty();
+      $('.error-msg').hide();
+      $.ajax('/tweets', {
         method: 'POST',
         data: $(this).serialize(),
-      }).then(() =>{
+      }).then(() => {
         loadTweets();
         $("#tweet-text").val("");
-        
+
       })
     }
   })
@@ -97,11 +100,33 @@ const loadTweets = function () {
   })
 };
 
-const escape = function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
+const timePosted = function (date) {
+  let now = new Date(Date.now());
+  let posted = new Date(date);
+  let seconds = now.getSeconds() - posted.getSeconds();
+  if (seconds < 60) {
+    return "less than 1min ago"
+  } else if (seconds >= 60 && seconds < 3600) {
+    let mins = Math.floor(seconds / 60);
+    return `about ${mins} ago`
+  } else if (seconds >= 3600 && seconds < 86400) {
+    let hrs = Math.floor(seconds / 3600);
+    return `about ${hrs} ago`
+
+  } else {
+    let days = Math.floor(seconds / 86400);
+    return `about ${days} ago`
+
+  }
+}
+
+
 
 
 

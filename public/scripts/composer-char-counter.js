@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(this).css("color", "red");
         return (140 - tweetLength)
       }
+      $(this).css("color", "black");
       return (140 - tweetLength);
     });
   });

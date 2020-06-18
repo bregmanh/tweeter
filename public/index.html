@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -52,12 +53,17 @@
         <textarea name="text" id="tweet-text"></textarea>
         <div class="humming-button">
           <div><button type="submit">Tweet</button></div>
+          <div class="error-msg">
+          </div>
+
+
           <div><output name="counter" class="counter" for="tweet-text">140</output></div>
         </div>
         <div class="tweets-container">
-          
+
         </div>
       </form>
+
     </section>
   </main>
 </body>
