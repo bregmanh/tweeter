@@ -11,7 +11,7 @@ It was built with HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Exp
 3. Additional features: responsive design, and escaping to prevent XSS.
 
 ## Final Product
-In the following picture you can see the desktop version of the site. The user here is typing a new tweet.
+The following illustrates the desktop version of the site. The user here is typing a new tweet.
 ![New Tweet - Desktop Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/new-tweet.png?raw=true)
 In the following screenshot you can see the mobile version of the site. You can also see that one of the tweets is responding to a hover. In addition, the error is displayed upon trying to submit an empty tweet.
 ![Empty Tweet Error and Hover over a Tweet](https://github.com/bregmanh/tweeter/blob/master/docs/mobile-hover.png?raw=true)
