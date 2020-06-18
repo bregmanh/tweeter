@@ -15,6 +15,10 @@ textarea{
   width: 100%;
 }
 
+.counter{
+  color: rgba(0, 0, 0, 0.678)
+}
+
 .humming-button{
   display: flex;
   flex-direction: row;
@@ -46,16 +50,6 @@ output{
   padding-right: 1em;
 }
 
-#exceed-char{
-  display: flex;
-  margin-top: 0;
-  visibility: hidden;
-  font-size: small;
-  justify-self: center;
-  background-color: #c33;
-  color: #fff;
-  align-self: center;
-}
 
 
 
