@@ -1,5 +1,7 @@
 nav{
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,4 +13,18 @@ nav{
 
 span{
   font-family: 'Bungee';
+}
+#toggle{
+  font-family: 'Source Sans Pro';
+  font-size: 1em;
+  background-color: Transparent;
+  border: none;
+}
+div.toggle-div{
+display: flex;
+flex-direction: column;
+}
+.fa{
+color: red;
+align-self: center;
 }

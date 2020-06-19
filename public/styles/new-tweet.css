@@ -23,7 +23,7 @@ textarea{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 button{
@@ -49,6 +49,10 @@ output{
   padding-left: 1em;
   padding-right: 1em;
 }
+form{
+  display:none;
+}
+
 
 
 

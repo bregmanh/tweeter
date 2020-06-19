@@ -29,39 +29,39 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
-
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
+    <div class="toggle-div"><button type="button" id="toggle"><b>Write</b> a new tweet<br><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
+    </div>
   </nav>
   <header class="main">
     <div>
       <img src="/images/profile-hex.png">
     </div>
-
     <div class="name">
       <h2>Hannah Bregman</h2>
     </div>
   </header>
-
   <main class="container">
     <section class="new-tweet">
-      <h3>What are you humming about?</h3>
       <form action="/tweets/" method="POST">
+        <h3>What are you humming about?</h3>
         <label for="tweet-text"></label>
         <textarea name="text" id="tweet-text"></textarea>
         <div class="humming-button">
           <div><button type="submit">Tweet</button></div>
-          <div class="error-msg">
-          </div>
+          <div class="error-msg"></div>
           <div><output name="counter" class="counter" for="tweet-text">140</output></div>
         </div>
+      </form>
+    
         <div class="tweets-container">
           <!-- Tweets go here -->
         </div>
-      </form>
-    </section>
+      </section>
+    
   </main>
 </body>
 

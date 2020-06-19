@@ -1,7 +1,4 @@
-$(document).ready(() => {
-  loadTweets();
-  submitForm();
-});
+
 
 const createTweetElement = function(tweetData) {
   let $tweet = $(`<article class="tweet">
@@ -96,7 +93,24 @@ const timePosted = function(date) {
   }
 };
 
+const toggleClicked = function () {
+  $('#toggle').on("click", function (evt) {
+    
+    evt.preventDefault();
+    if($('form').css('display')==='none'){
+      $('form').css('display', 'block');
+    }else{
+      $('form').css('display', 'none');
+    }
+  })
+}
 
+$(document).ready(() => {
+  loadTweets();
+  
+submitForm();
+toggleClicked();
+});
 
 
 
