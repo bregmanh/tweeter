@@ -28,3 +28,13 @@ flex-direction: column;
 color: red;
 align-self: center;
 }
+
+div.toggle-div > button:hover{
+  animation-name: toggle;
+  animation-duration: 4s;
+}
+
+@keyframes toggle {
+  from {height: 1em;}
+  to {background-color: 1.5em}
+}
