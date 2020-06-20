@@ -12,7 +12,7 @@ It was built with HTML, CSS, SASS, JS, jQuery and AJAX front-end skills, and Nod
 4. Additional features: responsive design, and escaping to prevent XSS.
 
 ## Final Product
-The following screenshot illustrates the animated button that exposes the new tweet form.
+The following illustrates the main features of the app.
 
 The following screenshot illustrates the desktop version of the site. The user here is typing a new tweet.
 ![New Tweet - Desktop Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/new-tweet.png?raw=true)
