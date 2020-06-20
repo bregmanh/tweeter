@@ -12,8 +12,8 @@ It was built with HTML, CSS, SASS, JS, jQuery and AJAX front-end skills, and Nod
 4. Additional features: responsive design, and escaping to prevent XSS.
 
 ## Final Product
-The following screenshot illustrates the animated button that exposes the new tweet form.
-
+The following gif provides a quick illustration of the main features of the project.
+![Overall Illustration](https://github.com/bregmanh/tweeter/blob/extra/docs/toggle.gif?raw=true)
 The following screenshot illustrates the desktop version of the site. The user here is typing a new tweet.
 ![New Tweet - Desktop Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/new-tweet.png?raw=true)
 In the following screenshot you can see the mobile version of the site. You can also see that one of the tweets is responding to a hover. In addition, the error is displayed upon trying to submit an empty tweet.
