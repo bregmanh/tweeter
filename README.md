@@ -15,11 +15,11 @@ It was built with HTML, CSS, SASS, JS, jQuery and AJAX front-end skills, and Nod
 The following illustrates the main features of the app.
 
 The following screenshot illustrates the desktop version of the site. The user here is typing a new tweet.
-![New Tweet - Desktop Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/new-tweet.png?raw=true)
+![New Tweet - Desktop Version of Site]()
 In the following screenshot you can see the mobile version of the site. You can also see that one of the tweets is responding to a hover. In addition, the error is displayed upon trying to submit an empty tweet.
-![Empty Tweet Error and Hover over a Tweet](https://github.com/bregmanh/tweeter/blob/master/docs/mobile-hover.png?raw=true)
+![Empty Tweet Error and Hover over a Tweet]()
 The following screenshot illustrates the error upon trying to submit a tweet that exceeds the character limit. Note the character counter.
-![Long Tweet Error - Mobile Version of Site](https://github.com/bregmanh/tweeter/blob/master/docs/long-tweet.png?raw=true)
+![Long Tweet Error - Mobile Version of Site]()
 
 ## Getting Started
 
