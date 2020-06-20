@@ -38,10 +38,13 @@ main {
   body {
     flex-direction: row;
   }
-
-  body > nav {
+  body nav {
     height: 120px;
     background-color: #4056A1;
+  }
+  body header.main {
+    margin-top: 120px;
+    width: 30%;
   }
 
   main.container {
@@ -50,11 +53,6 @@ main {
     justify-content: center;
     margin-top: 120px;
     margin-left: 3em;
-  }
-
-  body > header.main {
-    margin-top: 120px;
-    width: 30%;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -98,7 +96,7 @@ div.toggle-div {
   align-self: center;
 }
 
-div.toggle-div > button:hover .fa {
+div.toggle-div button:hover .fa {
   animation-name: toggle;
   animation-duration: 4s;
   position: relative;
@@ -228,16 +226,14 @@ div.content {
   border-bottom: 0.2rem solid #5a5a5a;
 }
 
-article > header {
+article header {
   height: 3.5em;
 }
-
-article > header h5 {
+article header h5 {
   margin-left: 1em;
   align-self: center;
 }
-
-article > footer {
+article footer {
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -247,11 +243,6 @@ article > footer {
   padding-bottom: 0.5em;
   font-size: medium;
   justify-content: space-between;
-}
-
-.footer-images > img {
-  width: 1em;
-  padding: 0.1em;
 }
 
 .footer-images > img {

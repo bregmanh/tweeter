@@ -29,11 +29,13 @@ color: red;
 align-self: center;
 }
 
-div.toggle-div > button:hover .fa{
-  animation-name: toggle;
-  animation-duration: 4s;
-  position: relative;
-}
+div.toggle-div {
+  button:hover .fa{
+    animation-name: toggle;
+    animation-duration: 4s;
+    position: relative;
+  }
+} 
 
 @keyframes toggle {
   0%{top:-5px; filter:saturate(1)}

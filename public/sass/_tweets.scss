@@ -52,31 +52,26 @@ div.content{
   border-bottom: 0.2rem solid rgb(90, 90, 90);
 }
 
-article > header{
-  height: 3.5em;
-}
-
-article >header h5 {
-  margin-left: 1em;
-  align-self: center;
-}
-
-article > footer {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  width: 95%;
-  padding-top: 1em;
-  padding-left: 0.5em;
-  padding-bottom: 0.5em;
-  font-size: medium;
-  justify-content: space-between;
-}
-
-.footer-images > img {
-  width: 1em;
-  padding: 0.1em;
-}
+article {
+  header{
+    height: 3.5em;
+  }
+  header h5 {
+    margin-left: 1em;
+    align-self: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 95%;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: medium;
+    justify-content: space-between;
+  }
+} 
 
 .footer-images > img {
   width: 1em;
