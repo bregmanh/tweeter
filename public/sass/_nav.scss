@@ -31,14 +31,14 @@ align-self: center;
 
 div.toggle-div > button:hover .fa{
   animation-name: toggle;
-  animation-duration: 1s;
+  animation-duration: 4s;
   position: relative;
 }
 
 @keyframes toggle {
-  0%{top:-10px; filter:saturate(1)}
+  0%{top:-5px; filter:saturate(1)}
 
-  50%{top:0; filter:saturate(0)}
+  50%{top:10px; filter:saturate(0)}
 
-  100%{top:-10px; filter:saturate(1)}
+  100%{top:-5px; filter:saturate(1)}
 }

@@ -1,0 +1,272 @@
+header.main {
+  margin-top: 30px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6bc56;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: "Source Sans Pro", Sans-Serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-self: center;
+  width: 90%;
+  padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+
+  body > nav {
+    height: 120px;
+    background-color: #4056A1;
+  }
+
+  main.container {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 3em;
+  }
+
+  body > header.main {
+    margin-top: 120px;
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #d6bc56;
+  color: #FFFF;
+  padding: 1.5em;
+}
+
+span {
+  font-family: "Bungee";
+}
+
+#toggle {
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  background-color: Transparent;
+  border: none;
+}
+
+div.toggle-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa {
+  color: red;
+  align-self: center;
+}
+
+div.toggle-div > button:hover .fa {
+  animation-name: toggle;
+  animation-duration: 4s;
+  position: relative;
+}
+
+@keyframes toggle {
+  0% {
+    top: -5px;
+    filter: saturate(1);
+  }
+  50% {
+    top: 10px;
+    filter: saturate(0);
+  }
+  100% {
+    top: -5px;
+    filter: saturate(1);
+  }
+}
+.new-tweet {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.new-tweet h3 {
+  margin-bottom: 0px;
+}
+
+textarea {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  width: 100%;
+}
+
+.counter {
+  color: rgba(0, 0, 0, 0.678);
+}
+
+.humming-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+button {
+  font-family: "Bungee";
+  color: white;
+  background-color: #4056A1;
+  font-size: medium;
+}
+
+output {
+  font-family: "Bungee";
+  font-size: medium;
+}
+
+.error-msg {
+  display: none;
+  margin-top: 0;
+  font-size: medium;
+  justify-self: center;
+  color: #c33;
+  align-self: stretch;
+  border: 2px solid red;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+form {
+  display: none;
+}
+
+.tweets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+article.tweet {
+  margin-bottom: 3em;
+  display: flex;
+  border: 0.2rem solid #5a5a5a;
+  flex-direction: column;
+}
+
+article.tweet > header {
+  padding: 0.5em;
+  font-family: "Source Sans Pro";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.user {
+  display: flex;
+  flex-direction: row;
+}
+
+div.signature {
+  padding: 0.5em;
+}
+
+.user-name {
+  display: none;
+}
+
+.tweets-container:hover .user-name {
+  display: flex;
+  padding: 1em;
+  color: #8792a1;
+}
+
+div.signature > img {
+  width: 5em;
+}
+
+div.content {
+  display: flex;
+  align-self: center;
+  width: 95%;
+  padding-left: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 0.2rem solid #5a5a5a;
+}
+
+article > header {
+  height: 3.5em;
+}
+
+article > header h5 {
+  margin-left: 1em;
+  align-self: center;
+}
+
+article > footer {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 95%;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: medium;
+  justify-content: space-between;
+}
+
+.footer-images > img {
+  width: 1em;
+  padding: 0.1em;
+}
+
+.footer-images > img {
+  width: 1em;
+  padding: 0.1em;
+}
+
+div.footer-images {
+  display: flex;
+  align-self: center;
+}
+
+article.tweet:hover {
+  box-shadow: 10px 10px #8792a1;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
