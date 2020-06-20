@@ -32,3 +32,4 @@ The following screenshot illustrates the error upon trying to submit a tweet tha
 - Node 5.10.x or above
 - Chance
 - Body-Parser
+- SASS
