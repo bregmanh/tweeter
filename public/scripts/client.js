@@ -108,10 +108,11 @@ const toggleClicked = function () {
 
 $(document).ready(() => {
   loadTweets();
+  submitForm();
+  toggleClicked();
   
-submitForm();
-toggleClicked();
 });
+
 
 
 
