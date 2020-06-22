@@ -21,8 +21,8 @@ const createTweetElement = function(tweetData) {
   return $tweet;
 };
 
-const submitForm = function() {
-  $('form').on("submit", function (evt) {
+const submitForm = function(evt) {
+  
     evt.preventDefault();
     let tweet = $("textarea[name='text']").val();
     $('.error-msg').empty();
@@ -46,7 +46,6 @@ const submitForm = function() {
         $("#tweet-text").val("");
       });
     }
-  });
 };
 
 const renderTweets = function(tweets) {
@@ -108,7 +107,7 @@ const toggleClicked = function () {
 
 $(document).ready(() => {
   loadTweets();
-  submitForm();
+  $('form').on("submit", submitForm)
   toggleClicked();
   
 });
