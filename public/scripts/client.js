@@ -99,6 +99,7 @@ const toggleClicked = function () {
     evt.preventDefault();
     if($('form').css('display')==='none'){
       $('form').css('display', 'block');
+      $('textarea').focus();
     }else{
       $('form').css('display', 'none');
     }
