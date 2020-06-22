@@ -13,7 +13,7 @@ It was built with HTML, CSS, SASS, JS, jQuery and AJAX for the front-end, and No
 
 ## Final Product
 The following illustrates the main features of the app.
-![illustration]()
+![illustration](https://github.com/bregmanh/tweeter/blob/extra/docs/illustration.gif?raw=true)
 
 ## Getting Started
 
